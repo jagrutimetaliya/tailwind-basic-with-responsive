@@ -33,9 +33,8 @@ Before using the CDN build, please note that many of the features that make Tail
     <h1 class="text-4x1 font-bold text-center text-blue-500">Jagruti Metaliya</h1>
 </body>
 </html>
-
 ```
-`Note : CDN build large compressed, which means that you have ended with the very large file which is not good for the production. Sites that follow our best practices are almost always under 10kb compressed.`
+> Note : CDN build large compressed, which means that you have ended with the very large file which is not good for the production. Sites that follow our best practices are almost always under 10kb compressed.
 
 ## 2. Generating our own version of tailwind css cli
 
@@ -51,7 +50,6 @@ simply just copy and paste bellow lines to your css file.
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 ```
 
 Tailwind will swap these directives out at build-time with all of the styles it generates based on your configured design system.
@@ -74,10 +72,9 @@ here `./css/styles.css` is the input file and `./build/tailwind.css` is output f
     <h1 class="text-4x1 font-bold text-center text-blue-500">Jagruti Metaliya</h1>
 </body>
 </html>
-
 ```
 
-`Note : Problem with this is we have to build with every change` 
+> Note : Problem with this is we have to build with every change
 
 ## 3 : Installing Tailwind CSS as a PostCSS plugin
 
@@ -86,11 +83,10 @@ here `./css/styles.css` is the input file and `./build/tailwind.css` is output f
 ```
 npm init -y
 npm install -D tailwindcss postcss autoprefixer vite
-
 ```
  add `"dev": "vite"` to your package.json scripts sections, now it will be something like: 
  
-```
+ ```
 {
   "name": "tailwind",
   "version": "1.0.0",
@@ -109,16 +105,13 @@ npm install -D tailwindcss postcss autoprefixer vite
     "vite": "^2.0.1"
   }
 }
-
-
 ```
 
-`Note : we are setup our frontend tooling with vite, we have created dev script that runs in a vite server`
+> Note : we are setup our frontend tooling with vite, we have created dev script that runs in a vite server
 
 ```
  npx tailwindcss init -p // -p for the  PostCSS 
- 
- ```
+```
 It will create minimal  tailwind and PostCSS config file in your root directory 
 
 now we can remove our build directory also, Now let start the development server using npm  
@@ -126,7 +119,7 @@ now we can remove our build directory also, Now let start the development server
 ` npm run dev `
 
 
-
+##### Yahh !! we now setup the configuration we are ready to go. 
 
 
 

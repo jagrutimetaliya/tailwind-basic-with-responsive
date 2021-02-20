@@ -1,6 +1,6 @@
-﻿# Setting Up Tailwind CSS
+# Setting Up Tailwind CSS
 
-### 1. Using Tailwind via CDN
+## 1. Using Tailwind via CDN
 
 Before using the CDN build, please note that many of the features that make Tailwind CSS great are not available without incorporating Tailwind into your build process.
 
@@ -18,7 +18,7 @@ Before using the CDN build, please note that many of the features that make Tail
 
 => You can't tree-shake unused styles
 
-## Example 
+### Example 
 
 ```
 <html class="en">
@@ -37,12 +37,12 @@ Before using the CDN build, please note that many of the features that make Tail
 ```
 `Note : CDN build large compressed, which means that you have ended with the very large file which is not good for the production. Sites that follow our best practices are almost always under 10kb compressed.`
 
-### 2. Generating our own version of tailwind css cli
+## 2. Generating our own version of tailwind css cli
 
 
-step 1 : Create a CSS file if you don't have, I have already have my CSS file at css/styles.css 
+#### Step 1 : Create a CSS file if you don't have, I have already have my CSS file at css/styles.css 
 
-step 2 : Now use the `@tailwind` directive to inject Tailwind's `base`, `components`, and `utilities` styles. 
+#### Step 2 : Now use the `@tailwind` directive to inject Tailwind's `base`, `components`, and `utilities` styles. 
 
 simply just copy and paste bellow lines to your css file.
 
@@ -56,7 +56,7 @@ simply just copy and paste bellow lines to your css file.
 
 Tailwind will swap these directives out at build-time with all of the styles it generates based on your configured design system.
 
-Step 3 : Run the file through PostCSS we can you the tailwindcss-cli to do just that
+#### Step 3 : Run the file through PostCSS we can you the tailwindcss-cli to do just that
  ` npx tailwindcss-cli build ./css/styles.css -o ./build/tailwind.css `
 
 here `./css/styles.css` is the input file and `./build/tailwind.css` is output files 
@@ -79,9 +79,9 @@ here `./css/styles.css` is the input file and `./build/tailwind.css` is output f
 
 `Note : Problem with this is we have to build with every change` 
 
-### 3 : Installing Tailwind CSS as a PostCSS plugin
+## 3 : Installing Tailwind CSS as a PostCSS plugin
 
-# 1. Install Tailwind via npm
+### Install Tailwind via npm
 
 ```
 npm init -y

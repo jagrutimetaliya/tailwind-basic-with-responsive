@@ -83,8 +83,10 @@ here `./css/styles.css` is the input file and `./build/tailwind.css` is output f
 ```
 npm init -y
 npm install -D tailwindcss postcss autoprefixer vite
+npx tailwindcss init -p
 ```
- add `"dev": "vite"` to your package.json scripts sections, now it will be something like: 
+> Note : we are setup our frontend tooling with vite, we have created dev script that runs in a vite server and while init time we have set -p for the PostCSS 
+Add `"dev": "vite"` to your package.json scripts sections, now it will be something like: 
  
  ```
 {
@@ -107,11 +109,8 @@ npm install -D tailwindcss postcss autoprefixer vite
 }
 ```
 
-> Note : we are setup our frontend tooling with vite, we have created dev script that runs in a vite server
 
-```
- npx tailwindcss init -p // -p for the  PostCSS 
-```
+
 It will create minimal  tailwind and PostCSS config file in your root directory 
 
 now we can remove our build directory also, Now let start the development server using npm  
@@ -119,7 +118,7 @@ now we can remove our build directory also, Now let start the development server
 ` npm run dev `
 
 
-##### Yahh !! we now setup the configuration we are ready to go. 
+##### Yehhh !! we now setup the configuration we are ready to go. 
 
 
 

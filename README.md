@@ -1,11 +1,17 @@
-﻿### Setting Up Tailwind CSS
+﻿# Setting Up Tailwind CSS
 
-# 1. Using Tailwind via CDN
+### 1. Using Tailwind via CDN
+
 Before using the CDN build, please note that many of the features that make Tailwind CSS great are not available without incorporating Tailwind into your build process.
+
+```
+ <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+ 
+ ```
 
 => You can't customize Tailwind's default theme
 
-=> You can't use any directives like @apply, @variants, etc.
+=> You can't use any directives like `@apply`, `@variants`, etc.
 
 => You can't enable additional variants like group-focus
 
@@ -13,6 +19,7 @@ Before using the CDN build, please note that many of the features that make Tail
 
 => You can't tree-shake unused styles
 
+### Example 
 
 ```
 <html class="en">

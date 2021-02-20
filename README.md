@@ -86,6 +86,7 @@ npm install -D tailwindcss postcss autoprefixer vite
 npx tailwindcss init -p
 ```
 > Note : we are setup our frontend tooling with vite, we have created dev script that runs in a vite server and while init time we have set -p for the PostCSS 
+
 Add `"dev": "vite"` to your package.json scripts sections, now it will be something like: 
  
  ```
